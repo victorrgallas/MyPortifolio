@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/* ESTILO INICIAL DE CIMA */
+body {
+    background-color: black;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding: 40px 4%;
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.15);
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button {
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(236, 17, 17);
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: red;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px rgb(134, 11, 11);
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+/* ESTILO TOPO SITE */
+
+section.topo-site {
+    padding: 40px 4%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.topo-site h1 {
+    color: white;
+    font-size: 34px;
+    line-height: 80px;
+}
+
+.topo-site h1 span {
+    color: red;
+
+}
+
+.topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 100px;
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILOS HABILIDADES */
+
+section.habilidades {
+    padding: 40px 4%;
+
+}
+
+section.habilidades .flex {
+    gap: 60px;
+}
+
+.habilidades .habilidades-box {
+    color: white;
+    padding: 40px;
+    margin-top: 35px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.habilidades .habilidades-box:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.205);
+}
+
+.habilidades .habilidades-box i {
+    font-size: 62px;
+    color: red;
+}
+
+.habilidades .habilidades-box h3 {
+    font-size: 26px;
+    color: red;
+    margin: 15px 0px;
+}
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    padding: 60px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 35px;
+}
+
+.sobre .texto-sobre {
+    color: white;
+
+}
+
+.sobre .img-sobre img {
+    border-radius: 55px;
+}
+
+.sobre .texto-sobre h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.sobre .texto-sobre h2 span {
+    color: red;
+    display: block;
+}
+
+.sobre .texto-sobre p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 0 7px;
+    transition: 0.2s;
+}
+
+/* ESTILO PROJETOS */
+
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.082);
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.img-projeto {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 50% 0%;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.356);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO FORMULARIO */
+
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: red;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+    padding: 35px 4%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.205);
+
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid red;
+}
+
+footer .line-footer p i {
+    color: red;
+    font-size: 20px;
+
+}
+
+footer .line-footer p a {
+    color: red;
+    text-decoration: none;
+}
+
+/* SITE RESPONSIVO */
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSE GERAL */
+
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    .topo-site .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    /* SESSAO TOPO */
+    .menuDesktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO SITE  */
+
+    section.topo-site .flex {
+        gap: 60px;
+    }
+
+    section.topo-site {
+        padding: 20px 8%;
+    }
+
+    .topo-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* SESSAO HABILIDADES */
+
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .texto-sobre h2 {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* PROJETOS */
+
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    .img-projeto {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 60px;
+    }
+
+    /* FOOTER */
+
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}

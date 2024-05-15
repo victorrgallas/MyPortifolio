@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/ti/vetor-gratis/p1/5879490-abstract-letter-v-line-transition-color-linear-logo-linear-modern-lettering-lines-font-alphabet-template-set-logo-thin-line-clean-style-black-background-vetor.jpg"
+        type="image/png">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <title>Portifólio</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo1">
+                <a href="logo1">
+                    <img src="img/logo.jpg" alt="Logo1" height="100px" width="95px">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menuDesktop">
+                <ul>
+                    <li><a href="#">Ínicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="texto-topo-site">
+                        <h1>DESENVOLVEDOR BACKEND & FRONTEND<span>!</span></h1>
+                        <p>Estudante de Análise e Desenvolvimento de Sistemas pela instituição Univali.
+                            Em busca de oportunidades para atuar como desenvolvedor backend ou frontend.
+                        </p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div><!--btn-contato-->
+                    </div><!--texto-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="img/fotominha.jpg" width="325px" height="340px">
+                    </div><!--imagem-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+        <section class="habilidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
+                <div class="flex">
+                    <div class="habilidades-box">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>HTML&CSS</h3>
+                        <p>Habilidade aprimorada com curso em HTML & CSS.
+                            FreeCodeCamp - 300Hrs.
+                        </p>
+                    </div><!--habilidades-box-->
+                    <div class="habilidades-box">
+                        <i class="bi bi-filetype-java"></i>
+                        <h3>Java</h3>
+                        <p>Cursos em andamento para aprimorar o conhecimento e habilidades.
+                        </p>
+                    </div><!--habilidades-box-->
+                    <div class="habilidades-box">
+                        <i class="bi bi-filetype-py"></i>
+                        <h3>Python</h3>
+                        <p>Cursos em andamento para aprimorar o conhecimento e habilidades.
+                        </p>
+                    </div><!--habilidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--habilidades-->
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="img/fotominha2.jpeg" alt="img-sobre" width="340px" height="585px">
+                    </div><!--img-sobre-->
+                    <div class="texto-sobre">
+                        <h2>PRAZER, <span>ME CHAMO VICTOR GALLAS.</span></h2>
+                        <p>Residente em Santa Catarina, sou Victor Gallas, tenho 25 anos e sou estudante de Análise e
+                            Desenvolvimento de Sistemas pela Univali.
+                            No momento, estou em busca da minha primeira oportunidade para atuar na area de
+                            desenvolvimento de softwares e sistemas.
+                            Sou muito empenho em resultados e tenho paixão em aprender. </p>
+                        <p>Sou um profissonal que sempre busca agregar para equipe e para empresa, visando o bem estar e
+                            principalmente o resultado.</p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/victor-paulo-gallas-2208531b3/"
+                                target="blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/victorrgallas" target="blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+
+
+                        </div><!--btn-social-->
+                    </div><!--texto-sobre-->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        <section class="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    <div class="img-projeto" style="background-image: url(img/breve.jpg);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-projeto" style="background-image: url(img/breve.jpg);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-projeto" style="background-image: url(img/breve.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--projetos-->
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">ENTRE EM <span>CONTATO.</span></h2>
+
+                <form  method="post" action="enviar.php">
+                    <input type="text" name="nome" id="nome" placeholder="Nome ou Empresa" required>
+                    <input type="text" name="email" id="email" placeholder="E-mail" required>
+                    <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui.." required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div><!--btn-enviar-->
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="img/logo.jpg" alt="logo2" height="100px" width="95px">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/victor-paulo-gallas-2208531b3/" target="blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/victorrgallas" target="blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-at"></i> <a
+                        href="mailto:victorrgallas@gmail.com">victorrgallas@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+
+    </footer>
+
+</body>
+
+</html>
